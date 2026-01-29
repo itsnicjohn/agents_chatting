@@ -83,7 +83,7 @@ async def main():
     inbound_trunk_details = await get_inbound_trunk_details(phone_number)
     
     print(f"Starting Load Test at {datetime.now().isoformat()}...")
-    print(f"\tID: {load_test_id} (search @room:load_test_{load_test_id}* in DataDog)")
+    print(f"\tID: {load_test_id}")
     print("\tDispatching to:", os.getenv("LIVEKIT_URL"))
     print(f"\tOutbound Details")
     print(f"\t\tTrunk: {outbound_trunk_details.sip_trunk_id}")
