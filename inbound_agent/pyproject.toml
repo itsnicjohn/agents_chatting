@@ -1,0 +1,11 @@
+[project]
+name = "inbound_agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "livekit-agents[openai,turn-detector,silero,cartesia,deepgram,anthropic,elevenlabs,google,rime,tavus]==1.2.7",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "python-dotenv",
+]
